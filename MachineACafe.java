@@ -4,27 +4,26 @@ public class MachineACafe {
     int eau;      // cl
     int grains;   //g
     int gobelets; //en nombre
-    int cafesservis;
+    int cafesServis;
 
-    double monnayeur; // argent mis par le client
-    double caisse;    // argent total gagné
+    double monnayeur; //
+    double caisse;    // 
 
     int EAU_MAX = 100;
     int GRAINS_MAX = 50;
     int GOBELETS_MAX = 10;
     int MAX_CAFES = 5;
 
-    // constructeur : machine neuve
     public MachineACafe() {
         eau = EAU_MAX;
         grains = GRAINS_MAX;
         gobelets = GOBELETS_MAX;
         cafesServis = 0;
-        monnayeur = 0.0;
-        caisse = 0.0;
+        monnayeur = 0;
+        caisse = 0;
     }
 
-    // mettre de l'argent
+    // demande la monnaie insérer
     public void insererMonnaie(double montant) {
         if (montant > 0) {
             monnayeur += montant;
